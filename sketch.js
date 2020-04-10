@@ -15,9 +15,10 @@ function setup() {
     let p;
 
     function gotData(data) {
-        p = createP(data.text);
+        console.log(data)
+        p = createP(data.summary);
         p.parent('main');
-        console.log(data.text);
+        console.log(data.summary);
     }
 
 
